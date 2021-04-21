@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="logout">Cerrar sesion</string>
+    <string name="email">Correo electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="question_account">¿No tienes cuenta?</string>
+    <string name="sign_up"><u>Regístrese</u></string>
+    <string name="form">Formulario</string>
+    <string name="Register">Registrar</string>
+    <string name="required_field">Campo requerido</string>
+    <string name="repeat_password">Repita contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="password_error">La contraseña debe tener minimo 6 digitos</string>
+    <string name="coincidence_error">Las contraseñas no coinciden</string>
+    <string name="password_errors">Las contraseñas son invalidas</string>
+    <string name="name_error">Ingrese un nombre</string>
+    <string name="last_name_error">Ingrese un apellido</string>
+    <string name="email_error">Correo electrónico invalido</string>
+    <string name="enter_password">Ingrese contraseña</string>
+    <string name="login_error">Correo electronico y/o contraseña incorrectos</string>
+    <string name="unregistered_user">No hay usuarios registrados</string>
+</resources>
