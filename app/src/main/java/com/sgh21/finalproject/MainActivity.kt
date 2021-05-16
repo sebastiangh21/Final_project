@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
         //user = intent.extras?.getSerializable("user") as User
+
         //mainBinding.emailTextView.text = user.email
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
