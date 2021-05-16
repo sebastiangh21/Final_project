@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/azul_background"
+    android:background="@color/icon_background"
     tools:context=".RegisterActivity">
 
     <androidx.cardview.widget.CardView
@@ -43,10 +43,10 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/name_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:helperText="@string/required_field"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:helperText="@string/required_field">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/name_edit_text"
@@ -60,10 +60,10 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/last_name_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:helperText="@string/required_field"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:helperText="@string/required_field">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/last_name_edit_text"
@@ -77,10 +77,10 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/email_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:helperText="@string/required_field"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:helperText="@string/required_field">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/email_edit_text"
@@ -94,12 +94,12 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/password_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:counterEnabled="true"
                     app:endIconMode="password_toggle"
-                    app:helperText="@string/required_field"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:helperText="@string/required_field">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/password_edit_text"
@@ -107,18 +107,18 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:hint="@string/password"
-                        android:inputType="numberPassword" />
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/rep_password_text_input_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:counterEnabled="true"
                     app:endIconMode="password_toggle"
                     app:errorEnabled="true"
-                    app:helperText="@string/required_field"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:helperText="@string/required_field">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/rep_password_edit_text"
@@ -126,7 +126,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:hint="@string/repeat_password"
-                        android:inputType="numberPassword" />
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
@@ -135,10 +135,23 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="16dp"
-                    android:backgroundTint="@color/azul_background"
+                    android:backgroundTint="@color/button_color"
                     android:text="@string/Register"
                     android:textColor="@color/black" />
             </LinearLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/principal_icon"
+        tools:ignore="ContentDescription" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

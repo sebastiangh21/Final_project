@@ -1,6 +1,7 @@
 package com.sgh21.finalproject
 
 import ActivityUtils.minimumLength
+import ActivityUtils.EMPTY
 import ActivityUtils.validateEmail
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -15,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var loginBinding: ActivityLoginBinding
     private lateinit var user: User
     private var password: String = EMPTY
+    private var check = arrayOf(false,false)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,12 +40,27 @@ class LoginActivity : AppCompatActivity() {
         }
 
         loginBinding.emailLoginEditText.doAfterTextChanged {
-            loginBinding.emailLoginTextInputLayout.error = if (!validateEmail(loginBinding.emailLoginEditText.text.toString())) getString(R.string.email_error)  else null
+
+            if(!validateEmail(loginBinding.emailLoginEditText.text.toString())){
+                check[0] = false
+                loginBinding.emailLoginTextInputLayout.error = getString(R.string.email_error)
+            }else{
+                loginBinding.emailLoginTextInputLayout.error = null
+                check[0] = true
+            }
+            enableButton()
         }
 
         loginBinding.passwordEditText.doAfterTextChanged {
             password = loginBinding.passwordEditText.text.toString()
-            loginBinding.passwordLoginTextInputLayout.error = if (!minimumLength(password)) getString(R.string.password_error) else null
+            if (!minimumLength(password)){
+                loginBinding.passwordLoginTextInputLayout.error = getString(R.string.password_error)
+                check[1] = false
+            }else{
+                loginBinding.passwordLoginTextInputLayout.error = null
+                check[1] = true
+            }
+            enableButton()
         }
 
         loginBinding.signUpTextView.setOnClickListener {
@@ -51,6 +68,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    private fun enableButton() {
+        loginBinding.loginButton.isEnabled = check[0] && check[1]
+    }
+
     private fun mainactivity() {
         val  intent = Intent(this, MainActivity::class.java)
         intent.putExtra("user",user)

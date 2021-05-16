@@ -1,5 +1,30 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_search">Buscar</string>
+    <string name="menu_myPurchases">Mis compras</string>
+    <string name="menu_favorite">Favoritos</string>
+    <string name="menu_history">Historial</string>
+    <string name="menu_resume">Resumen</string>
+    <string name="menu_publish">Publicar</string>
+    <string name="menu_myAccount">My cuenta</string>
+
+    <string name="home_label">Inicio</string>
+    <string name="search_label">Buscar</string>
+    <string name="myPurchases_label">Mis compras</string>
+    <string name="favorite_label">Favoritos</string>
+    <string name="history_label">Historial</string>
+    <string name="resume_label">Resumen</string>
+    <string name="publish_label">Publicar</string>
+    <string name="myAccount_label">My cuenta</string>
+
     <string name="logout">Cerrar sesion</string>
     <string name="email">Correo electronico</string>
     <string name="password">Contraseña</string>
@@ -21,4 +46,29 @@
     <string name="enter_password">Ingrese contraseña</string>
     <string name="login_error">Correo electronico y/o contraseña incorrectos</string>
     <string name="unregistered_user">No hay usuarios registrados</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Inicio: en este fragment se mostrara una mezcla
+        de las ultimas busquedas y las busquedas marcadas como favoritas.</string>
+    <string name="account_fragment">Cuenta: en este fragment aparecen varias opciones como, Mis datos en
+        donde podrá modificar los datos de la cuenta, Mis comentarios en donde se podra monitorear
+        los comentarios hechos en las publicaciones y las respuestas que han recibido estos comentarios
+        y salir en donde se puede desconectar la cuenta actual.</string>
+    <string name="favorite_fragment">Favoritos: en este fragment aparece una lista de
+        todas las publicaciones que han sido registradas como favorito por el usuario.</string>
+    <string name="history_fragment">Historial: en este fragment aparece una lista de
+        todas las publicaciones visitadas por el usuario en orden cronologico.</string>
+    <string name="publish_fragment">Publicar: en este fragment se puede realizar nuevas publicaciones,
+        en este aparecen varios campos en los cuales el usuario puede personalizar e informar sobre
+        su publicacion.</string>
+    <string name="purchases_fragment">Compras: en este fragment aparece una lista de
+        todas las compras realizadas en esta cuenta.</string>
+    <string name="resume_fragment">Resumen: en este fragment aparece una lista de las publicaciones
+        hechas por el usuario para vender algun producto o servicio y tambien aparece una lista con
+        los comentarios hechos en sus publicaciones ya sea pidiendo informacion o con otro algun motivo,
+        ademmas aparece un boton flotante con el cual se puede realizar una nueva publicacion.</string>
+    <string name="search_fragment">Busqueda: en este fragment se abrira una barra de busqueda en
+        donde se colocara el nombre del producto que se quiere buscar y tambien se ira mostrando
+        las publicaciones relacionadas con el producto de busqueda.</string>
+    <string name="user_email">example@correo.com</string>
 </resources>

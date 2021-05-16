@@ -1,16 +1,14 @@
 package com.sgh21.finalproject
 
 import android.content.Intent
-import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.sgh21.finalproject.databinding.ActivityRegisterBinding
-import ActivityUtils.*
+import ActivityUtils.minimumLength
+import ActivityUtils.EMPTY
+import ActivityUtils.validateEmail
 import androidx.core.widget.doAfterTextChanged
-
-
-const val EMPTY = ""
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -62,7 +60,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun goToLoginActivity() {
         val  intent = Intent(this, LoginActivity::class.java)
         intent.putExtra("user",user)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
     }
 }

@@ -4,6 +4,7 @@ import android.util.Patterns
 import java.util.regex.Pattern
 
 const val MINLENGHT = 6
+const val EMPTY = ""
 
 fun validateEmail(email: String): Boolean {
     val pattern: Pattern = Patterns.EMAIL_ADDRESS
